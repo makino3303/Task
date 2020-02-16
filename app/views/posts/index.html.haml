@@ -1,0 +1,45 @@
+.header
+  .header-main
+    .header-main-box
+      .header-main-box-title
+        株式会社テスト
+      .header-main-box-sub
+        会社の説明が入ります会社の説明が入ります
+    .header-main-right
+      %ul.header-main-right__ul
+        %li.header-main-right__ul__li 会社概要
+        %li.header-main-right__ul__li サービス
+        %li.header-main-right__ul__li 採用情報
+        %li.header-main-right__ul__li アクセス
+      .header-main-right-button お問い合わせ
+.image
+  .image-box
+    = image_tag '/assets/img1.jpg'
+.content
+  .content-main
+    .content-main-title 新着情報
+    = render 'post'
+    = render 'post'
+    .content-main-button もっとみる
+  .content-top
+    %i.fas.fa-chevron-up.content-top-scroll
+.bottom
+  .bottom-main
+    .bottom-main-links
+      .bottom-main-links-link トップページ
+      .bottom-main-links-break /
+      .bottom-main-links-link 第二階層
+      .bottom-main-links-break /
+      .bottom-main-links-link 第三階層
+      .bottom-main-links-break /
+      .bottom-main-links-link 該当ページ名が入ります
+.footer
+  .footer-main
+    .footer-main-title ©︎ test corporation inc.
+    .footer-main-links
+      .footer-main-links-box
+        %i.fab.fa-instagram
+      .footer-main-links-box
+        %i.fab.fa-twitter
+      .footer-main-links-box
+        %i.fab.fa-facebook
