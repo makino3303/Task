@@ -5,13 +5,24 @@
         株式会社テスト
       .header-main-box-sub
         会社の説明が入ります会社の説明が入ります
-    .header-main-right
+    .header-main-right#ham-menu
       %ul.header-main-right__ul
-        %li.header-main-right__ul__li 会社概要
-        %li.header-main-right__ul__li サービス
-        %li.header-main-right__ul__li 採用情報
-        %li.header-main-right__ul__li アクセス
-      .header-main-right-button お問い合わせ
+        %li.header-main-right__ul__li
+          = link_to "", class:"header-main-right__ul__li__link" do
+            会社概要
+        %li.header-main-right__ul__li
+          = link_to "", class:"header-main-right__ul__li__link" do
+            サービス
+        %li.header-main-right__ul__li
+          = link_to "", class:"header-main-right__ul__li__link" do
+            採用情報
+        %li.header-main-right__ul__li
+          = link_to "", class:"header-main-right__ul__li__link" do
+            アクセス
+        = link_to "", class:"header-main-right__ul__li__link" do
+          .header-main-right__ul__li1
+            お問い合わせ
+    #menu-background
 .image
   .image-box
     = image_tag '/assets/img1.jpg'
